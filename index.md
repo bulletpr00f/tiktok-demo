@@ -41,3 +41,14 @@ https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/671833
 ```
 
 Source: https://developers.tiktok.com/doc/Embed
+
+# 😍❤️ Demo Time 😍❤️
+
+## Requirements
+Python - https://www.python.org/
+pycurl - https://pypi.org/project/pycurl/
+
+## Steps
+1.  Download [embed.py](https://raw.githubusercontent.com/bulletpr00f/tiktok-demo/main/embed.py)
+2.  Execute `python embed.py`
+3.  Examine output.
