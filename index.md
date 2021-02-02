@@ -39,3 +39,5 @@ https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/671833
   "provider_name": "TikTok"
 }
 ```
+
+Source: https://developers.tiktok.com/doc/Embed
