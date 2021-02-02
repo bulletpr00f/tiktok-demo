@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Embed a Tik Tok video with [oEmbed](https://oembed.com/)
 
-You can use the [editor on GitHub](https://github.com/bulletpr00f/tiktok-demo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Embedded for developers
+Programmatically, you may convert a TikTok's video URL into embedded video markup by using the oEmbed API. It allows you to get the embed code and additional information about the video associated with the webpage link provided.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## API
+GET	/oembed	Returns the embed code and infomation about the video
+Parameters
+Request
 
-### Markdown
+Param	Description
+url	The video link for embedding
+Response
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The response format follows the specification of https://oembed.com/, please check it out for more details.
 
-```markdown
-Syntax highlighted code block
+## Example
+Request URL
 
-# Header 1
-## Header 2
-### Header 3
+https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/6718335390845095173
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### Response Data
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```json
+{
+  "version": "1.0",
+  "type": "video",
+  "title": "Scramble up ur name & I’ll try to guess it😍❤️ #foryoupage #petsoftiktok #aesthetic",
+  "author_url": "https://www.tiktok.com/@scout2015",
+  "author_name": "Scout & Suki",
+  "width": "100%",
+  "height": "100%",
+  "html": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@scout2015/video/6718335390845095173\" data-video-id=\"6718335390845095173\" style=\"max-width: 605px;min-width: 325px;\" > <section> <a target=\"_blank\" title=\"@scout2015\" href=\"https://www.tiktok.com/@scout2015\">@scout2015</a> <p>Scramble up ur name & I’ll try to guess it😍❤️ <a title=\"foryoupage\" target=\"_blank\" href=\"https://www.tiktok.com/tag/foryoupage\">#foryoupage</a> <a title=\"petsoftiktok\" target=\"_blank\" href=\"https://www.tiktok.com/tag/petsoftiktok\">#petsoftiktok</a> <a title=\"aesthetic\" target=\"_blank\" href=\"https://www.tiktok.com/tag/aesthetic\">#aesthetic</a></p> <a target=\"_blank\" title=\"♬ original sound - 𝐇𝐚𝐰𝐚𝐢𝐢𓆉\" href=\"https://www.tiktok.com/music/original-sound-6689804660171082501\">♬ original sound - 𝐇𝐚𝐰𝐚𝐢𝐢𓆉</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
+  "thumbnail_width": 720,
+  "thumbnail_height": 1280,
+  "thumbnail_url": "https://p16.muscdn.com/obj/tos-maliva-p-0068/06kv6rfcesljdjr45ukb0000d844090v0200010605",
+  "provider_url": "https://www.tiktok.com",
+  "provider_name": "TikTok"
+}
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bulletpr00f/tiktok-demo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
