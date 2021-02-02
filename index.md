@@ -45,8 +45,8 @@ Source: https://developers.tiktok.com/doc/Embed
 # 😍❤️ Demo Time 😍❤️
 
 ## Requirements
-Python - https://www.python.org/
-pycurl - https://pypi.org/project/pycurl/
+-  Python - https://www.python.org/
+-  pycurl - https://pypi.org/project/pycurl/
 
 ## Steps
 1.  Download [embed.py](https://raw.githubusercontent.com/bulletpr00f/tiktok-demo/main/embed.py)
